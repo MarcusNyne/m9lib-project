@@ -71,7 +71,7 @@ The custom result class is **"class EmptyCommandResult(uCommandResult)"**.
 - It is not necessary to implement a custom result class.  If not required, delete the class and remove the class from the registration call.
 - To conserve memory, command objects are released immediately after execution.  However, command results will be maintained by **uControl**, so add any properties that you would like to be available post-execution.
 
-The custom command class is "class EmptyCommand(uCommand)".
+The custom command class is **"class EmptyCommand(uCommand)"**.
 - Note that calling super class initialization is required.
 - Implement your command within **imp_execute()**
 - There are a wide variety of methods available for parameter access and logging.  Commands should use command parameters for execution.
